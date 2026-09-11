@@ -1,0 +1,27 @@
+# Local Terraform state & working directories
+**/.terraform/*
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Real variable values — never commit actual environment secrets/CIDRs you
+# consider sensitive. Use envs/*.tfvars for the checked-in, non-secret example
+# environments and terraform.tfvars for anything local/private.
+terraform.tfvars
+!envs/*.tfvars
+*.auto.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config that may contain credentials
+.terraformrc
+terraform.rc
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
